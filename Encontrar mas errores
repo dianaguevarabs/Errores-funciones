@@ -1,0 +1,27 @@
+// Encontrar mas errores Diana Guevara 181864
+
+#include <stdio.h>
+float perimetroFigura(float numero) // antes aparecia (int) 
+{
+	float perimetro;
+	perimetro = 4 * numero;
+	return perimetro;// tenia un () de mas y le falta el ; al final
+}
+float areaFigura(float numero) // aparecia void y tenia una (,) de mas dentro del parentesis
+{
+	float area;
+	area = numero * numero;
+	return area; // le falta un (;)
+}
+int main ()
+{
+	float num; // aparecia int 
+	printf ("Lado de un cuadrado:" ); // le flata el (;)
+	scanf ("%f", &num); // aparecia (%d) 
+	printf ("Perimetro: %f\n", perimetroFigura (num)); // aparecia perimetrofigura
+	printf ("Area: %f\n", areaFigura (num)); // aparecia {num} y tenia un ) de más
+	return 0;
+} // le falta (})
+
+ 
+
