@@ -22,6 +22,3 @@ int main ()
 	printf ("Area: %f\n", areaFigura (num)); // aparecia {num} y tenia un ) de más
 	return 0;
 } // le falta (})
-
- 
-
